@@ -6,8 +6,9 @@ end
 
 
 
-(1...integer).any? do |num|
+return false if (1...integer).any? do |num|
   integer % num == 0
+end 
 end
 
 # factors = []
