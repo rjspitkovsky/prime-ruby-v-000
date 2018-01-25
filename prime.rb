@@ -5,37 +5,19 @@ if integer <= 1
 end
 
 
-(2..integer-1).each do |num|
-    if integer % num == 0
-      return false
-    end
-  end
-  true
 
+(2...integer).each do |num|
+  if integer % num == 0 
+    false 
+  end 
+end 
+true 
+end 
 
-
-# factors = []
-# (1...integer).each do |num|
-#   if integer % num == 0
-#     factors << num
+# (2..integer-1).each do |num|
+#     if integer % num == 0
+#       return false
+#     end
 #   end
+#   true
 # end
-#
-# if factors.empty?
-#   return true
-# else
-# return  false
-# end
-
-
-
-# x = 1
-# while x < integer
-#   integer.abs
-#   if integer % x == 0 && x != 1
-#     return false
-#   end
-#   x += 1
-# end
-# true
-end
