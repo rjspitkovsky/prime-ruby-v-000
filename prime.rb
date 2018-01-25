@@ -4,7 +4,15 @@ if integer < 0
   return false
 end
 
-(1...integer).any? {|num| integer % num == 0}
+
+factors = []
+(1...integer).each {|num| integer % num == 0}
+
+if factors.empty?
+  return true
+else
+  false
+end 
 
 
 
