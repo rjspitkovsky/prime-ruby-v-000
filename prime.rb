@@ -8,7 +8,7 @@ end
 
 (2...integer-1).each do |num|
   if integer % num == 0
-    false
+    return false
   end
 end
 true
