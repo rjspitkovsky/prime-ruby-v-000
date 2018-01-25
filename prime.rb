@@ -4,9 +4,9 @@ if integer < 0
   return false
 end
 
-(1...integer).any? do |num|
+(2...integer).any? do |num|
   integer % num == 0
-end 
+end
 
 
 
