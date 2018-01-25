@@ -10,12 +10,12 @@ factors = []
   if integer % num == 0
     factors << num
   end
-end 
+end
 
 if factors.empty?
   return true
 else
-  false
+return  false
 end
 
 
