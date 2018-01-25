@@ -7,11 +7,11 @@ end
 
 
 (2...integer).each do |num|
-  if integer % num == 0 
-    false 
-  end 
-end 
-true 
+  if integer % num == 0
+    false
+  end
+end
+true
 end 
 
 # (2..integer-1).each do |num|
