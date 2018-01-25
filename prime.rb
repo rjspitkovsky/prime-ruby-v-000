@@ -5,13 +5,13 @@ if integer <= 1
 end
 
 
-(2..integer/2).each do |num|
+(2..integer-1).each do |num|
     if integer % num == 0
       return false
     end
   end
   true
-  
+
 
 
 # factors = []
