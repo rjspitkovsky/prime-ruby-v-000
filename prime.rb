@@ -1,11 +1,11 @@
 def prime?(integer)
 
-if integer < 0 
-  return false 
-end 
+if integer < 0
+  return false
+end
 
 (1...integer).any? do |num|
-  integer % num == 0 
+  integer % num == 0
 end 
 
 
