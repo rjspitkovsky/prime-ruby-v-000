@@ -8,6 +8,8 @@ end
 
 return false if (1...integer).any? do |num|
   integer % num == 0
+else
+  true 
 end
 
 # factors = []
