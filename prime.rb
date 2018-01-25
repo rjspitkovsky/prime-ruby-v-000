@@ -1,17 +1,12 @@
 def prime?(integer)
 
-factors = []
-(1...integer).each do |num|
-  if integer % num == 0
-    factors << num
-  end
-end
-  if factors == []
-    return true
-  else
-    false
-  end 
+if integer < 0 
+  return false 
+end 
 
+(1...integer).any? do |num|
+  integer % num == 0 
+end 
 
 
 
