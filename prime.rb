@@ -5,18 +5,23 @@ if integer <= 1
 end
 
 
-factors = []
-(1...integer).each do |num|
-  if integer % num == 0
-    factors << num
-  end
-end
 
-if factors.empty?
-  return true
-else
-return  false
-end
+(1...integer).any? do |num|
+  integer % num == 0
+end 
+
+# factors = []
+# (1...integer).each do |num|
+#   if integer % num == 0
+#     factors << num
+#   end
+# end
+#
+# if factors.empty?
+#   return true
+# else
+# return  false
+# end
 
 
 
