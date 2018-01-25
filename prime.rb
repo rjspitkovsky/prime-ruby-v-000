@@ -7,8 +7,8 @@ end
 
 
 (1...integer).any? do |num|
-  integer % num == 0
-end 
+  !(integer % num == 0)
+end
 
 # factors = []
 # (1...integer).each do |num|
