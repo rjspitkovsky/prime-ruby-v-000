@@ -9,8 +9,9 @@ end
 return false if (1...integer).any? do |num|
   integer % num == 0
 else
-  true 
+  true
 end
+end 
 
 # factors = []
 # (1...integer).each do |num|
