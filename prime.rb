@@ -4,7 +4,7 @@ if integer < 0
   return false
 end
 
-(2...integer).any? do |num|
+(1...integer).any? do |num|
   integer % num == 0
 end
 
