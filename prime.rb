@@ -6,7 +6,11 @@ end
 
 
 factors = []
-(1...integer).each {|num| integer % num == 0}
+(1...integer).each do |num|
+  if integer % num == 0
+    factors << num
+  end
+end 
 
 if factors.empty?
   return true
